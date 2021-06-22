@@ -1,0 +1,15 @@
+<p><a href="/inserir">Inserir</a></p>
+<table>
+	<tr>
+		<th>ID</th><th>Nome</th><th>Idade</th><th></th><th></th>
+	</tr>
+	{{#each info}}
+	<tr>
+		<td>{{id}}</td>
+		<td>{{nome}}</td>
+		<td>{{idade}}</td>
+		<td><a href="/alterar/{{id}}">Alterar</a></td>		
+		<td><a href="/excluir/{{id}}">Excluir</a></td>
+	</tr>	
+	{{/each}}
+</table>
